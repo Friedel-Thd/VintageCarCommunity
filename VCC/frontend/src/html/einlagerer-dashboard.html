@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page displayed in the browser tab. -->
+    <title>Einlagerer Dashboard</title>
+    <!-- External stylesheet for styling the HTML elements. -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- External JavaScript module for handling user input. -->
+    <script type="module" src="../userInputHandler.js"></script>
+</head>
+<body class="einlagerer">
+<!-- Container div wraps all content on the page. -->
+<div class="container">
+    <!-- Main title of the page. -->
+    <h1 id="title" class="header">Vintage Car Community</h1>
+    <!-- Welcome message for the user. -->
+    <h2 id="welcome"></h2>
+
+    <!-- Buttons for various actions in the Einlagerer dashboard. -->
+    <button id="stellplatzSuchenButton" class="menu-button">Stellplatz suchen</button>
+    <button id="angeboteVerwaltenButton" class="menu-button">Angebote verwalten</button>
+    <button id="zusatzserviceBuchenButton" class="menu-button">Zusatz-Service buchen</button>
+    <button id="fahrzeugeVerwaltenButton" class="menu-button">Fahrzeuge verwalten</button>
+    <button id="einlagererAnfragenVerwaltenButton" class="menu-button">Anfragen verwalten</button>
+
+    <!-- Stellplatzsuche Form -->
+    <div id="stellplatzSucheForm" class="form-container">
+        <h2 id="stellplatzSucheTitle">Stellplatzsuche</h2>
+        <!-- Form for searching for parking spaces. -->
+        <form>
+            <!-- Dropdowns for selecting city and car brand. -->
+            <label id="stadtSelectLabel">Stadt:
+                <select id="stadtSelect" name="stadt" required>
+                    <option value="%">Beliebig</option>
+                </select>
+            </label>
+            <label id="markenSelectLabel">Marke:
+                <select id="markenSelect" name="marke">
+                    <option value="%">Beliebig</option>
+                </select>
+            </label>
+            <!-- Buttons for navigating and submitting the form. -->
+            <button id="stellplatzSucheBackButton" class="back-button">Zurück</button>
+            <button class="action-button" type="submit">Suchen</button>
+        </form>
+    </div>
+
+    <!-- Stellplatzsuche Ergebnis Form -->
+    <div id="stellplatzSucheErgebnisForm" class="form-container">
+        <h2 id="stellplatzSucheErgebnisTitle">Stellplatzsuche</h2>
+        <h3 id="stellplatzSucheErgebnisSmallTitle"></h3>
+        <!-- Form for displaying the search results. -->
+        <form id="stellplatzSucheErgebnis">
+
+        </form>
+        <!-- Button for navigating back. -->
+        <button id="stellplatzSucheErgebnisBackButton" class="back-button">Zurück</button>
+    </div>
+
+    <!-- Stellplatzsuche Detail Form -->
+    <div id="stellplatzSucheDetailForm" class="form-container">
+        <h2 id="stellplatzSucheDetailTitle">Stellplatzsuche</h2>
+        <!-- Form for displaying details of a selected parking space. -->
+        <form>
+            <div id="stellplatzSucheDetailErgebnis"> </div>
+
+            <!-- Container for buttons to navigate and submit. -->
+            <div id="stellplatzSucheButtonContainer">
+                <button id="stellplatzSucheDetailBackButton" class="back-button">Zurück</button>
+                <button class="action-button" type="submit">Angebot anfordern</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Angebote Verwalten Form -->
+    <div id="angeboteVerwaltenForm" class="form-container">
+        <h2 id="angeboteVerwaltenTitle">Erhaltene Angebote</h2>
+        <!-- Form for managing received offers. -->
+        <form>
+            <!-- Container for displaying received offers. -->
+            <div id="angeboteVerwaltenResultForm" class="form-container"></div>
+
+            <!-- Button for navigating back. -->
+            <button id="angeboteVerwaltenBackButton" class="back-button">Zurück</button>
+        </form>
+    </div>
+
+    <!-- Angebot Annehmen/Ablehnen Form -->
+    <div id="angebotAnnehmenAblehnenForm" class="form-container">
+        <h2 id="angebotAnnehmenAblehnenTitle">Erhaltene Angebote</h2>
+        <!-- Form for accepting/declining received offers. -->
+        <form>
+            <!-- Container for displaying offer details. -->
+            <div id="angebotAnnehmenAblehnenErgebnis"></div>
+            <!-- Input fields for entering car details. -->
+            <div>
+                <label id="angebotAnnehmenMarkeLabel">Marke:
+                    <input id="angebotAnnehmenMarkeText" type="text" name="angebotAnnehmenMarke">
+                </label>
+            </div>
+            <div>
+                <label id="angebotAnnehmenModellLabel">Modell:
+                    <input id="angebotAnnehmenModellText" type="text" name="angebotAnnehmenModell">
+                </label>
+            </div>
+
+            <!-- Container for buttons to navigate and submit. -->
+            <div id="annehmenAblehnenButtonContainer">
+                <button id="angebotAnnehmenAblehnenBackButton" class="back-button">Zurück</button>
+                <button id="angebotAnnehmenAblehnenAblehnenButton" class="delete-button">Angebot ablehnen</button>
+                <button class="action-button" type="submit">Angebot annehmen (Fahrzeug einlagern)</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Fahrzeuge Verwalten Liste Form -->
+    <div id="fahrzeugeVerwaltenListeForm" class="form-container">
+        <h2 id="fahrzeugeVerwaltenListeTitle">Fahrzeuge verwalten</h2>
+        <!-- Form for displaying the list of managed vehicles. -->
+        <form id="fahrzeugeVerwaltenFahrzeugListeForm">
+
+        </form>
+        <!-- Button for navigating back. -->
+        <button id="fahrzeugeVerwaltenListeBackButton" class="back-button">Zurück</button>
+    </div>
+
+    <!-- Fahrzeug Verwalten Form -->
+    <div id="fahrzeugVerwaltenForm" class="form-container">
+        <h2 id="fahrzeugVerwaltenTitle">Fahrzeug verwalten</h2>
+        <!-- Form for managing details of a selected vehicle. -->
+        <form id="fahrzeugVerwaltenFahrzeugInfoForm">
+            <!-- Input fields for editing car details. -->
+            <label id="fahrzeugMarkeLabel">Marke:
+                <input id="fahrzeugMarke" type="text" name="fahrzeugMarke" required>
+            </label>
+            <label id="fahrzeugModellLabel">Modell:
+                <input id="fahrzeugModell" type="text" name="fahrzeugModell" required>
+            </label>
+            <!-- Button for navigating back and submitting changes. -->
+            <button id="fahrzeugVerwaltenBackButton" class="back-button">Zurück</button>
+            <button id="fahrzeugVerwaltenDatenAendernButton" class="action-button" type="submit">Fahrzeugdaten ändern</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

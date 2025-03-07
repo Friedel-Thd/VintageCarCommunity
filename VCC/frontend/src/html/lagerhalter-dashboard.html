@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page displayed in the browser tab. -->
+    <title>Lagerhalter Dashboard</title>
+    <!-- External stylesheet for styling the HTML elements. -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- External JavaScript module for handling user input. -->
+    <script type="module" src="../userInputHandler.js"></script>
+</head>
+<body class="lagerhalter">
+<!-- Container div wraps all content on the page. -->
+<div class="container">
+    <!-- Main title of the page. -->
+    <h1 id="title" class="header">Vintage Car Community</h1>
+    <!-- Welcome message for the user. -->
+    <h2 id="welcome"></h2>
+
+    <!-- Buttons for various actions in the Lagerhalter dashboard. -->
+    <button id="stellplaetzeVerwaltenButton" class="menu-button">Stellplätze verwalten</button>
+    <button id="zusatzservicesVerwaltenButton" class="menu-button">Zusatz-Services verwalten</button>
+    <button id="lagerVerwaltenButton" class="menu-button">Lager verwalten</button>
+    <button id="lagerhalterAnfragenVerwaltenButton" class="menu-button">Anfragen verwalten</button>
+
+    <!-- Zusatz-Services Verwalten Form -->
+    <div id="zusatzVerwaltenForm" class="form-container">
+        <h2 id="zusatzVerwaltenTitel">Zusatz-Services verwalten</h2>
+        <!-- Form for managing additional services. -->
+        <form>
+            <!-- Container for displaying results of Zusatz-Services. -->
+            <div id="zusatzServiceResultForm" class="form-container"></div>
+            <!-- Buttons for navigating back and offering a new service. -->
+            <button id="zusatzVerwaltenBackButton" class="back-button">Zurück</button>
+            <button class="menu-button" id="neuerServiceButton">Neuen Service Anbieten</button>
+        </form>
+    </div>
+
+    <!-- Neuer Service Form -->
+    <div id="neuerServiceForm" class="form-container">
+        <h2 id="neuerServiceTitle">Zusatz-Services anbieten</h2>
+        <!-- Form for offering a new additional service. -->
+        <form>
+            <!-- Input fields for entering service details. -->
+            <label id="neuerServiceNameLabel">Name:
+                <input id="neuerServiceName" type="text" name="ServiceName" required>
+            </label>
+            <label id="neuerServicePreisLabel">Preis:
+                <input id="neuerServicePreis" type="text" name="ServicePreis" required>
+            </label>
+            <label id="neuerServiceBeschreibungLabel">Beschreibung:
+                <input id="neuerServiceBeschreibung" type="text" name="ServiceBeschreibung" required>
+            </label>
+
+            <!-- Buttons for navigating back and submitting the new service. -->
+            <button id="neuerServiceBackButton" class="back-button">Zurück</button>
+            <button id="neuerServiceAnbietenSubmit" class="action-button" type="submit">Service Anbieten</button>
+        </form>
+    </div>
+
+    <!-- Lagerhalter Anfragen Verwalten Form -->
+    <div id="lagerhalterAnfragenVerwaltenForm" class="form-container">
+        <h2 id="lagerhalterAnfragenVerwaltenTitle">Anfragen verwalten</h2>
+        <!-- Form for managing storage requests. -->
+        <form>
+            <!-- Container for displaying results of storage requests. -->
+            <div id="lagerhalterAnfrageResultForm" class="form-container"></div>
+            <!-- Buttons for navigating back and creating a workshop request. -->
+            <button id="lagerhalterAnfragenVerwaltenBackButton" class="back-button">Zurück</button>
+            <button id="werkstattanfragestellen" class="action-button">Werkstattanfrage stellen</button>
+        </form>
+    </div>
+
+    <!-- Lagerhalter Anfrage Detail Form -->
+    <div id="lagerhalterAnfrageDetailForm" class="form-container">
+        <h2 id="lagerhalterAnfrageDetailTitle">Angebote verwalten</h2>
+        <!-- Form for managing details of a storage request. -->
+        <form>
+            <!-- Container for displaying details of the storage request. -->
+            <div id="lagerhalterAnfrageDetailErgebnis"></div>
+            <!-- Input field for providing additional information. -->
+            <div>
+                <label id="anfrageAntwortLabel">Sonstige Informationen:
+                    <input id="anfrageAntwortText" type="text" name="anfrageAntwort">
+                </label>
+            </div>
+            <!-- Container for buttons to navigate, delete, and submit the response. -->
+            <div id="buttonContainer">
+                <button id="lagerhalterAnfrageDetailBackButton" class="back-button">Zurück</button>
+                <button id="lagerhalterAnfrageDetailDeleteButton" class="delete-button">Anfrage löschen</button>
+                <button class="action-button" type="submit">Angebot absenden</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Lager Verwalten Form -->
+    <div id="lagerVerwaltenForm" class="form-container">
+        <h2 id="lagerVerwaltenTitel">Lager verwalten</h2>
+        <!-- Form for managing warehouse details. -->
+        <form>
+            <!-- Input fields for editing warehouse details. -->
+            <label id="servicezeitenLabel">Servicezeiten:
+                <input id="lagerDatenInfoServicezeiten" type="text" name="servicezeiten" required>
+            </label>
+            <br>
+            <label id="postleitzahlLabel">Postleitzahl:
+                <input id="lagerDatenInfoPostleitzahl" type="text" name="postleitzahl" required>
+            </label>
+            <br>
+            <label id="strasseLabel">Strasse:
+                <input id="lagerDatenInfoStrasse" type="text" name="strasse" required>
+            </label>
+            <br>
+            <label id="hausnummerLabel">Hausnummer:
+                <input id="lagerDatenInfoHausnummer" type="text" name="hausnummer" required>
+            </label>
+            <br>
+            <!-- Dropdown menu for selecting the city. -->
+            <label id="stadtSelectLabel" name="stadt">Stadt:
+                <select id="stadtSelect" name="stadt">
+                </select>
+            </label>
+            <!-- Dropdown menu for selecting the specialized manufacturer. -->
+            <label id="markenSelectLabel" name="marke">Spezialisierter Hersteller:
+                <select id="markenSelect" name="marke">
+                    <option value="%">Beliebig</option>
+                </select>
+            </label>
+
+            <!-- Buttons for navigating back and confirming changes. -->
+            <button id="lagerVerwaltenBackButton" class="back-button">Zurück</button>
+            <button class="action-button" type="submit">Bestätigen</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

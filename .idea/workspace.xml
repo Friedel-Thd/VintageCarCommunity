@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b7316fe-693b-41d8-9661-12c1ad7d25a8" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2bm67qULI0gWTPD1XrrONXnf9EG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/thadd/Documents/UNI/Module/S4/SWTP/VCC/VCC",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b7316fe-693b-41d8-9661-12c1ad7d25a8" name="Changes" comment="" />
+      <created>1706807745807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706807745807</updated>
+      <workItem from="1706807747010" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/backend/src/createDatabase.js" />
+        <option value="$PROJECT_DIR$/backend/src/createDatabase.js.map" />
+        <option value="$PROJECT_DIR$/backend/src/server.js" />
+        <option value="$PROJECT_DIR$/backend/src/server.js.map" />
+        <option value="$PROJECT_DIR$/backend/src/sqlInserts.js" />
+        <option value="$PROJECT_DIR$/backend/src/sqlInserts.js.map" />
+        <option value="$PROJECT_DIR$/model/Lagerplatzkategorie.mjs" />
+        <option value="$PROJECT_DIR$/model/Lagerplatzkategorie.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Kontotyp.mjs" />
+        <option value="$PROJECT_DIR$/model/Kontotyp.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Lagerhalter.mjs" />
+        <option value="$PROJECT_DIR$/model/Lagerhalter.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Einlagerer.mjs" />
+        <option value="$PROJECT_DIR$/model/Einlagerer.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Fahrzeug.mjs" />
+        <option value="$PROJECT_DIR$/model/Fahrzeug.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Zusatzservice.mjs" />
+        <option value="$PROJECT_DIR$/model/Zusatzservice.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Nutzer.mjs" />
+        <option value="$PROJECT_DIR$/model/Nutzer.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Nutzernachricht.mjs" />
+        <option value="$PROJECT_DIR$/model/Nutzernachricht.mjs.map" />
+        <option value="$PROJECT_DIR$/model/System.mjs" />
+        <option value="$PROJECT_DIR$/model/System.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Lager.mjs" />
+        <option value="$PROJECT_DIR$/model/Lager.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Angebot.mjs" />
+        <option value="$PROJECT_DIR$/model/Angebot.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Werkstattanfrage.mjs" />
+        <option value="$PROJECT_DIR$/model/Werkstattanfrage.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Werkstatt.mjs" />
+        <option value="$PROJECT_DIR$/model/Werkstatt.mjs.map" />
+        <option value="$PROJECT_DIR$/model/Stellplatz.mjs" />
+        <option value="$PROJECT_DIR$/model/Stellplatz.mjs.map" />
+        <option value="$PROJECT_DIR$/frontend/src/userInputHandler.js" />
+        <option value="$PROJECT_DIR$/frontend/src/userInputHandler.js.map" />
+        <option value="$PROJECT_DIR$/model/Angebotsanfrage.mjs" />
+        <option value="$PROJECT_DIR$/model/Angebotsanfrage.mjs.map" />
+      </list>
+    </option>
+  </component>
+</project>

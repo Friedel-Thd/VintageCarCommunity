@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page displayed in the browser tab. -->
+    <title>Vintage Car Community</title>
+    <!-- External stylesheet for styling the HTML elements. -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- External JavaScript module for handling user input. -->
+    <script type="module" src="../userInputHandler.js"></script>
+</head>
+<body class="mainpage">
+<!-- Container div wraps all content on the page. -->
+<div class="container">
+    <!-- Main title of the page. -->
+    <h1 id="title" class="header">Vintage Car Community</h1>
+    <!-- Buttons for login and registration. -->
+    <button id="loginButton" class="action-button">Login</button>
+    <button id="registerButton" class="action-button">Registrieren</button>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="form-container">
+        <h2>Login</h2>
+        <!-- Form for user login. -->
+        <form>
+            <!-- Input fields for email and password. -->
+            <label>E-Mail: <input type="email" name="email" required></label><br>
+            <label>Passwort: <input type="password" name="password" required></label><br>
+            <!-- Buttons for navigating and submitting the form. -->
+            <button class="back-button">Zurück</button>
+            <button class="action-button" type="submit">Bestätigen</button>
+        </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registerForm" class="form-container">
+        <h2>Registrieren</h2>
+        <!-- Form for user registration. -->
+        <form>
+            <!-- Input fields for various user details. -->
+            <label>E-Mail: <input type="email" name="email" required></label><br>
+            <label>Passwort: <input type="password" name="password" required></label><br>
+            <label>Vorname: <input type="text" name="firstName" required></label><br>
+            <label>Nachname: <input type="text" name="lastName" required></label><br>
+            <label>Telefonnummer: <input type="text" name="phonenumber" required></label><br>
+            <label>Stadt: <input type="text" name="city" required></label><br>
+            <label>Postleitzahl: <input type="text" name="plz" required></label><br>
+            <label>Straße: <input type="text" name="street" required></label><br>
+            <label>Hausnummer: <input type="text" name="hnr" required></label><br>
+            <!-- Dropdown menu for selecting the account type. -->
+            <label>Account Type:
+                <select name="accountType" required>
+                    <option value="Einlagerer">Einlagerer</option>
+                    <option value="Lagerhalter">Lagerhalter</option>
+                    <option value="Werkstatt">Werkstatt</option>
+                </select>
+            </label>
+            <!-- Buttons for navigating and submitting the form. -->
+            <button class="back-button">Zurück</button>
+            <button class="action-button" type="submit">Bestätigen</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

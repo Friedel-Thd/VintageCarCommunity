@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page displayed in the browser tab. -->
+    <title>Werkstatt Dashboard</title>
+    <!-- External stylesheet for styling the HTML elements. -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- External JavaScript module for handling user input. -->
+    <script type="module" src="../userInputHandler.js"></script>
+</head>
+<body class="werkstatt">
+<!-- Container div wraps all content on the page. -->
+<div class="container">
+    <!-- Main title of the page. -->
+    <h1 id="title" class="header">Vintage Car Community</h1>
+    <!-- Welcome message for the user. -->
+    <h2 id="welcome"></h2>
+
+    <!-- Buttons for various actions in the Werkstatt dashboard. -->
+    <button id="werkstattVerwaltenButton" class="menu-button">Werkstatt verwalten</button>
+    <button id="werkstattAnfragenVerwaltenButton" class="menu-button">Anfragen verwalten</button>
+
+    <!-- Werkstatt Verwalten Form -->
+    <div id="werkstattVerwaltenForm" class="form-container">
+        <h2 id="werkstattVerwaltenTitle">Werkstattinformationen verwalten</h2>
+        <!-- Form for managing workshop information. -->
+        <form>
+            <!-- Input fields for editing workshop details. -->
+            <label>Werkstattname: <input id="werkstattInfoName" type="text" name="werkstattName"></label><br>
+            <label>Angebotene Arbeiten: <input id="werkstattInfoArbeiten" type="text" name="angeboteneArbeiten"></label><br>
+            <label>Postleitzahl: <input id="werkstattInfoPlz" type="text" name="plz"></label><br>
+            <label>Straße: <input id="werkstattInfoStr" type="text" name="street"></label><br>
+            <label>Hausnummer: <input id="werkstattInfoHnr" type="text" name="hnr"></label><br>
+            <!-- Dropdown menu for selecting the city. -->
+            <label id="stadtSelectLabel">Stadt:
+                <select id="stadtSelect" name="stadt" required>
+                </select>
+            </label>
+            <!-- Dropdown menu for selecting the specialized manufacturer. -->
+            <label id="markenSelectLabel">Spezialisierter Hersteller:
+                <select id="markenSelect" name="marke">
+                    <option value="%">Beliebig</option>
+                </select>
+            </label>
+
+            <!-- Buttons for navigating back and confirming changes. -->
+            <button id="werkstattVerwaltenBackButton" class="back-button">Zurück</button>
+            <button class="action-button" type="submit">Bestätigen</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

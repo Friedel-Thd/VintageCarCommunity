@@ -1,0 +1,129 @@
+/* Resetting default styles and setting up the main layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Main container for content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Heading styles */
+.header {
+    color: #80ba24;
+}
+
+/* Headings for input forms */
+h2 {
+    align-items: center;
+    color: #80ba24;
+}
+
+h3 {
+    align-items: center;
+    color: #80ba24;
+}
+
+/* Styling for back, action, and delete buttons */
+.back-button {
+    background-color: #4a5c66;
+}
+
+.action-button {
+    background-color: #80ba24;
+}
+
+.delete-button {
+    background-color: #bf1d1d;
+}
+
+.action-button, .back-button, .delete-button {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for menu buttons */
+.menu-button {
+    background-color: #80ba24;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Styling for select elements */
+.form-container select {
+    background-color: #80ba24;
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Styling for form containers (initially hidden) */
+.form-container {
+    display: none;
+}
+
+/* Styling for labels within form containers */
+.form-container label {
+    color: #80ba24;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling for input fields within form containers */
+.form-container input {
+    width: 90%;
+}
+
+/* Styling for specific form results and entries */
+#stellplatzSucheErgebnisForm {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding-right: 20px;
+}
+
+#zusatzServiceResultForm .result-entry {
+    height: 10vh;
+    padding-right: 20px;
+}
+
+.result-entry {
+    background-color: #80ba24;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Styling for error messages */
+.error-line {
+    color: #d23838;
+}
